@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/logos.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="{{ page.titulo }}">
+  <meta property="og:description" content="{{ page.descripcion }}">
+  <meta property="og:author" content="{{ page.autor }}">
+  <meta property="og:type" content="{{ page.type }}">
+  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:image" content="{{ page.img }}">
+  <meta property="og:image:width" content="1200">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <img src="media/logo.svg" alt="Círculo de Cultura Gnóstica y Medicinas Ancestrales">
+    <div>Círculo de Cultura Gnóstica y Medicinas Ancestrales</div>
+    <nav>
+      <ul>
+        <li><a href="guia/circulo">Guía del Educador</a></li>
+        <li><a href="guia/saw">Libros de Consulta</a></li>
+        <li><a href="guia/qe">Quinto Evangelio</a></li>
+        <li><a href="guia/letras">Primeras Letras</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <section>
+      {{ content }}
+    </section>
+    <aside>
+      <ul></ul>
+      <h2>Círculo de Cultura Gnóstica y Medicinas Ancestrales</h2>
+      <p>• • •</p>
+    </aside>
+  </article>
+  <footer>
+    <p>&copy; 2025 Círculo de Cultura Gnóstica y Medicinas Ancestrales. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/logos.js"></script>
+</body>
+
+</html>
