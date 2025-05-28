@@ -13,10 +13,10 @@ Textos apócrifos de la enseñanza gnóstica y crónicas de las pintas ayahuasqu
 
 ## Recursos de Aprendizaje
 
-- [Guía del Educador](/logos-press/circulo)
-- [Libros de Consulta](/logos-press/saw)
-- [Quinto Evangelio](/logos-press/qe)
-- [Primeras Letras](/logos-press/letras)
+- [Guía del Educador]({{ site.baseurl }}/logos-press/circulo)
+- [Libros de Consulta]({{ site.baseurl }}/logos-press/saw)
+- [Quinto Evangelio]({{ site.baseurl }}/logos-press/qe)
+- [Primeras Letras]({{ site.baseurl }}/logos-press/letras)
 
 ## La Ceremonia de la Vida
 
