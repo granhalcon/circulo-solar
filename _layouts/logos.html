@@ -21,22 +21,22 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="any" />
+    <link rel="icon" href="{{ site.baseurl }}/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/icon.png" />
 
-    <link rel="stylesheet" href="/docs/assets/css/styles.css" />
-    <link rel="stylesheet" href="/docs/assets/css/logos.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/docs/assets/css/styles.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/docs/assets/css{{ site.baseurl }}/logos.css" />
 
     <title>{{ page.title }}</title>
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest" />
     <meta name="theme-color" content="#ffe066" />
   </head>
 
   <body>
     <header>
       <img
-        src="/docs/assets/images/logo.svg"
+        src="{{ site.baseurl }}/docs/assets/images/logo.svg"
         alt="Círculo de Cultura Gnóstica y Medicinas Ancestrales"
       />
       <div>Círculo de Cultura Gnóstica y Medicinas Ancestrales</div>
@@ -44,10 +44,10 @@
     <nav>
       <ul>
         <li><a href="/">Inicio</a></li>
-        <li><a href="/logos-press/circulo/">Guía del Educador</a></li>
-        <li><a href="/logos-press/saw/">Libros de Consulta</a></li>
-        <li><a href="/logos-press/qe/">Quinto Evangelio</a></li>
-        <li><a href="/logos-press/letras/">Primeras Letras</a></li>
+        <li><a href="{{ site.baseurl }}/logos-press/circulo/">Guía del Educador</a></li>
+        <li><a href="{{ site.baseurl }}/logos-press/saw/">Libros de Consulta</a></li>
+        <li><a href="{{ site.baseurl }}/logos-press/qe/">Quinto Evangelio</a></li>
+        <li><a href="{{ site.baseurl }}/logos-press/letras/">Primeras Letras</a></li>
       </ul>
     </nav>
     <main>
@@ -65,7 +65,7 @@
         los derechos reservados.
       </p>
     </footer>
-    <script src="/docs/assets/js/jquery-3.7.1.min.js"></script>
-    <script src="/docs/assets/js/logos.js"></script>
+    <script src="{{ site.baseurl }}/docs/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="{{ site.baseurl }}/docs/assets/js{{ site.baseurl }}/logos.js"></script>
   </body>
 </html>
