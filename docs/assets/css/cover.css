@@ -1,0 +1,84 @@
+@import url('SourceCodePro.css');
+@page {
+    size: 1600px 2560px;
+    margin: 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+div#cover {
+    width: 1600px;
+    height: 2560px;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+}
+div#press {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 611px;
+    height: 377px;
+    border-left: 14px #000 double;
+}
+div#press p img {
+    width: 100px;
+    margin-top: 100px;
+}
+div#press p {
+    text-align: center;
+    font-size: 61px;
+    line-height: .61em;
+    vertical-align: middle;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Code Pro';
+}
+div#titulo {
+    position: absolute;
+    top; 377px;
+    bottom: 377px;
+    width: 100%;
+    height: 1806px;
+}
+div#titulo h1 {
+    font-size: 10em;
+    font-family: 'Source Code Pro';
+    font-weight: 900;
+    padding: 0 100px 0 377px;
+    hyphens: auto;
+}
+div#titulo span {
+    display: block;
+    font-size: 10em;
+    font-family: 'Source Code Pro';
+    font-weight: 900;
+    padding-left: 290px;
+}
+div#autor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 377px;
+    width: 100%;
+}
+div#autor span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 3.6em;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    letter-spacing: 0.7em;
+    margin-top: 50px;
+}
+div#autor p {
+    text-align: center;
+    font-size: 5.4em;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+}

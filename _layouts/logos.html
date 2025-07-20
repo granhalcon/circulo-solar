@@ -23,10 +23,17 @@
 
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="any" />
     <link rel="icon" href="{{ site.baseurl }}/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/icon.png" />
+    <link rel="icon" href="{{ site.baseurl }}/icon.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png" sizes="180x180" type="image/png" />
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/docs/assets/css/styles.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/docs/assets/css/logos.css" />
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/docs/assets/css/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/docs/assets/css/logos.css"
+    />
 
     <title>{{ page.title }}</title>
     <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest" />
@@ -44,19 +51,55 @@
     <nav>
       <ul>
         <li><a href="{{ site.baseurl }}/">Inicio</a></li>
-        <li><a href="{{ site.baseurl }}/logos-press/circulo/">Guía del Educador</a></li>
-        <li><a href="{{ site.baseurl }}/logos-press/saw/">Libros de Consulta</a></li>
-        <li><a href="{{ site.baseurl }}/logos-press/qe/">Quinto Evangelio</a></li>
-        <li><a href="{{ site.baseurl }}/logos-press/letras/">Primeras Letras</a></li>
+        <li>
+          <a href="{{ site.baseurl }}/logos-press/circulo/"
+            >Guía del Educador</a
+          >
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/logos-press/saw/">Libros de Consulta</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/logos-press/qe/">Quinto Evangelio</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/logos-press/letras/">Primeras Letras</a>
+        </li>
       </ul>
     </nav>
     <main>
       <article>
+        {% unless page.number == "000" %}
+        <section class="descargas">
+          <p>Descargar este texto</p>
+          <ul>
+        {% unless page.type == "saw" %}
+            <li>
+              <a href="{{ site.baseurl }}/docs/assets/media/{{ page.type }}/pdf/{{ page.number }}.pdf" download
+                >Descargar PDF para imprimir</a
+              >
+            </li>
+        {% endunless %}
+            <li>
+              <a href="{{ site.baseurl }}/docs/assets/media/{{ page.type }}/pdf/{{ page.number }}-estudio.pdf" download
+                >Descargar PDF para estudio</a
+              >
+            </li>
+            <li>
+              <a href="{{ site.baseurl }}/docs/assets/media/{{ page.type }}/epub/{{ page.number }}.epub" download
+                >Descargar EPUB</a
+              >
+            </li>
+          </ul>
+        </section>
+        {% endunless %}
         <section>{{ content }}</section>
       </article>
     </main>
     <aside>
+        {% unless page.number == "000" %}
       <ul></ul>
+        {% endunless %}
     </aside>
     <footer>
       <p>• • •</p>

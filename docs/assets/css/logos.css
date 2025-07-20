@@ -56,8 +56,17 @@ article a:focus {
     text-decoration: none;
     outline: none;
 }
+section.descargas p {
+    margin: 0.5em 0;
+    font-size: 1.3em;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
 aside {
 	width: 250px;
+    min-height: 255px;
 	float: right;
 	border-left: 3px solid #343a40;
 	padding: 10px;

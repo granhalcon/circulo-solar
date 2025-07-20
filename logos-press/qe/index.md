@@ -5,6 +5,8 @@ authon: Gran Halcón
 type: Article
 url: https://granhalcon.github.io/circulo-solar/
 image:  https://granhalcon.github.io/circulo-solar/logo.png
+type: qe
+number: "000"
 layout: logos
 ---
 # El Quinto Evangelio
