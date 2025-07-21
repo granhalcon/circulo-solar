@@ -66,24 +66,26 @@ section.descargas p {
 }
 aside {
 	width: 250px;
-    min-height: 255px;
 	float: right;
 	border-left: 3px solid #343a40;
 	padding: 10px;
 	text-align: center;
 }
+@media (min-width: 901px) {
+	aside {
+		min-height: 255px;
+	}
+}
 /* Listas en nav y aside: compactas y legibles */
 nav ul, nav ol,
 aside ul, aside ol {
     margin: 0.5em 0;
-    padding-left: 1.2em;
+    padding-left: 2.2em;
     line-height: 1.3;
 }
 
 nav li, aside li {
-    margin-bottom: 0.2em;
     font-size: 1em;
-    padding: 2px 0;
     text-align: left;
     word-break: break-word;
 }
@@ -130,7 +132,7 @@ p {
 
 ol, ul {
     margin: 1em 2em;
-    padding-left: 2em;
+    padding-left: 2.5em;
     line-height: 1.6;
 }
 
@@ -215,7 +217,7 @@ footer {
         font-size: 1.3em;
     }
     nav ul, aside ul, nav ol, aside ol {
-        padding-left: 0.5em;
+        padding-left: 2.5em;
     }
     h1 {
         font-size: 1.5em;
@@ -243,7 +245,6 @@ footer {
     width: 100vw;
     height: 30px;
     background: #ffe066;
-    border-top: 3px solid #343a40;
     border-left: none;
     border-right: none;
     border-bottom: none;
