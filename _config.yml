@@ -1,5 +1,17 @@
+## Public site URL (used for absolute links, sitemaps, social images).
+# If you're publishing as a repository site (https://<user>.github.io/<repo>),
+# set `url` to "https://<user>.github.io" and keep `baseurl` to the repo
+# path (e.g. "/circulo-solar").
+# If you're publishing to a user/organization site (https://<user>.github.io),
+# set `url` to the site root and set `baseurl` to an empty string "".
+url: "https://granhalcon.github.io"
 baseurl: "/circulo-solar"
 markdown: kramdown
+
+# Habilitar regeneración incremental para que `jekyll serve` intente reconstruir
+# únicamente las páginas modificadas en lugar de todo el sitio. Atención: algunos
+# cambios (config, plugins, colecciones) forzarán una reconstrucción completa.
+incremental: true
 
 # Welcome to Jekyll!
 #
@@ -56,3 +68,15 @@ markdown: kramdown
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - _drafts
+  - scripts
+  # Excluir dependencias y caches para que Jekyll no procese paquetes ni archivos generados
+  - vendor
+  - vendor/bundle
+  - Gemfile
+  - Gemfile.lock
+  - .bundle
+  - node_modules
+  - .jekyll-cache

@@ -1,0 +1,79 @@
+<svg width="1600px" height="2560px" viewBox="0 0 1600 2560" xmlns="http://www.w3.org/2000/svg">
+    
+    <!-- Imagen principal -->
+    <image width="1118" 
+           height="1582"
+           preserveAspectRatio="none"
+           xlink:href="{{ site.baseurl }}/docs/assets/images/maitreya.png"
+           x="240" 
+           y="0"/>
+
+    <!-- Rectángulo de color de fondo -->
+    <rect id="colorHTML"
+          width="1600" 
+          height="1000"
+          x="0" 
+          y="1560"
+          style="fill:{{ include.bg }};fill-opacity:1"/>
+
+    <!-- Logo -->
+        <!-- Logo -->
+    <image 
+        x="726" 
+        y="1488" 
+        width="144" 
+        height="144"
+        preserveAspectRatio="xMidYMid meet"
+        xlink:href="{{ site.baseurl }}/docs/assets/images/logo.svg" />
+
+    <!-- Definición del área para el texto del título -->
+    
+        <rect id="titleArea" 
+              x="150" 
+              y="1600" 
+              width="1300" 
+              height="700"
+              stroke="none"
+              fill="none"/>
+    
+<foreignObject x="150" y="1600" width="1300" height="700">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <div style="font-family: 'Source Sans 3', 'Source Sans Pro', 'Source Sans', sans-serif; 
+                  font-size: 177px;
+                  font-weight: 800;
+                  text-align: center;
+                  color: #ffffff;
+                  overflow-wrap: break-word;
+                  line-height: 1.1;">
+        {{ page.title }}
+      </div>
+    </body>
+  </foreignObject>
+    <!-- Título -->
+    <text id="tituloSAW"
+          style="font-weight:800;
+                 font-size:40px;
+                 line-height:1.2;
+                 font-family:'Source Sans 3', 'Source Sans Pro', 'Source Sans', sans-serif;
+                 text-align:center;
+                 white-space:normal;
+                 shape-inside:url(#titleArea);
+                 shape-padding:20;
+                 fill:#ffffff">
+        {{ include.title }}
+    </text>
+
+    <!-- Autor -->
+    <text id="authorSAW"
+          x="800" 
+          y="2425"
+          style="font-weight:300;
+                 font-size:102px;
+                 font-family:'Source Sans 3', 'Source Sans Pro', 'Source Sans', sans-serif;
+                 text-align:center;
+                 text-anchor:middle;
+                 fill:#ffffff">
+        {{ include.author }}
+    </text>
+
+</svg>

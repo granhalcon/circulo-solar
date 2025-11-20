@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="author" content="{{ page.author }}">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:author" content="{{ page.author }}" />
+    <meta property="og:image" content="{{ page.img }}" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{{ page.language }}" />
+    <meta
+      property="og:site_name"
+      content="Círculo de Cultura Gnóstica y Medicinas Ancestrales"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="any" />
+    <link rel="icon" href="{{ site.baseurl }}/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/icon.png" />
+<!--
+    <link rel="stylesheet" href="{{ site.baseurl }}/docs/assets/css/styles.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/docs/assets/css/logos.css" /> -->
+
+    <title>{{ page.bg }}</title>
+    <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  <meta name="theme-color" content="#ffe066">
+  </head>
+
+  <body>
+    {% include cover.svg title=page.title author=page.author bg=page.bg %}
+  </body>
+</html>

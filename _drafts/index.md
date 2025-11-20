@@ -1,3 +1,20 @@
+---
+author: Samael Aun Weor
+title: Libros de Consulta
+subtitle: 
+year: 2022
+description: >
+
+cover-image: /docs/assets/images/saw/000-cover.jpg
+media-image: /docs/assets/images/saw/000-media.jpg
+social-image: /docs/assets/images/saw/000-social.jpg
+rights:  Creative Commons Non-Commercial Share Alike 3.0
+language: es_MX
+number: "000"
+type: saw
+layout: cover
+---
+
 - [Índice](000.html)
 - [Guía para el Educador](001.html)
 - [El Arbol de la Vida](002.html)

@@ -1,0 +1,9 @@
+{
+  // Abrir archivos .svg con el editor de texto por defecto en este workspace
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "*.svg"
+    }
+  ]
+}
